@@ -76,6 +76,7 @@ function stop() {
 	else if(m<5)
 	{
 		window.alert("少於五分鐘將不被記錄");
+		start_time=undefined;
 	}
 	else{
     start_time=undefined;
