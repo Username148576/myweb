@@ -69,11 +69,19 @@ function run() {
 }
 
 function stop() {
+	if(start_time === undefined)
+	{
+		window.alert("貼心小提醒\n start:開始 stop:結束\n 請先開始再結束");
+	}
+	else if(m<5)
+	{
+		window.alert("少於五分鐘將不被記錄");
+	}
+	else{
     start_time=undefined;
     user=me.value;
     db.add({
         name: user,
-        hour: hr,
         minute: m
-  })
+  })}
 }
