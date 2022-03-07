@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				text-align:center;
+				font-family: Verdana, sans-serif;
+			}
+			
+			h1 {
+				font-size:50px;
+				-webkit-text-stroke: 2px black;
+				-webkit-text-fill-color: white;
+			}
+		</style>
+	</head>
+	
+	<body style="background-color:Lime">
+		<h1 id="demo"><b></b></h1>
+        <h1 id="hi"><b></b></h1>
+        <form>
+            <select id="me">
+                <option value="undefined">請選擇</option>
+                <option value="便便">便便</option>
+                <option value="鄒宜璇">鄒宜璇</option>
+                <option value="劉豐萱">劉豐萱</option>
+            </select>
+        </form>
+		<button onclick="start()" style="font-size:150%">Start</button>
+		<button onclick="stop()" style="font-size:150%">Stop</button>
+        <button onclick="record()" style="font-size:150%">View Record</button>
+        <h1 id="record1"><b></b></h1>
+        <h1 id="record2"><b></b></h1>
+        <h1 id="record3"><b></b></h1>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+		<script src="time.js"></script>
+	</body>
+</html>
