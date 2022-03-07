@@ -1,4 +1,4 @@
-var start_time;
+var start_time=undefined;
 var m,hr;
 var clock = setInterval(run , 1);
 var user;
